@@ -31,15 +31,19 @@ describe('CommentBox', () => {
     //these tests beneatch this describe block
     beforeEach(()=>{
       //helper
+      //simulating an event, here being the 'change' event
       component.find('textarea').simulate('change', 'new comment')
     });
 
     it('shows text in textarea', ()=>{
-
+      //expect to have the value that we simulated
+      expect(component.find('textarea')).to.have.value('new comment');
     });
 
     it('when submitted, clears the input', ()=>{
-
+      //don't have to find an element, because the whole component is the form
+      component.simulate('submit', 'new comment')
+      expect(component.find('textarea')).to.have.value('');
     });
   })
 });

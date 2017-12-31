@@ -14,4 +14,8 @@ describe('App', () => {
     //find is a jQuery test method that accepts a CSS selector
     expect(component.find('.comment-box')).to.exist
   })
+
+  it('shows a comment list', () => {
+    expect(component.find('.comment-list')).to.exist
+  })
 });
