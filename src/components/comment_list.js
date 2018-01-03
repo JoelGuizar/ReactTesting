@@ -16,6 +16,7 @@ const CommentList = (props) => {
 }
 
 //what state from redux do you need here
+//redux
 function mapStateToProps(state){
   return {comments: state.comments}
 }
