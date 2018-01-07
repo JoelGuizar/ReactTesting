@@ -1,7 +1,7 @@
 // things to test
 // make sure the intial state, the array in the argument, never gets changed
 import {expect} from '../test_helper';
-import commentReducer from '../../src/reducers';
+import commentReducer from '../../src/reducers/comments';
 import {SAVE_COMMENT} from '../../src/actions/types';
 
 describe('CommentsReducer', () => {

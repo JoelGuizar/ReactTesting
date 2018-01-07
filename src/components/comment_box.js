@@ -34,4 +34,4 @@ class CommentBox extends Component {
 
 //first arg is always state/mapStateToProps, here we don't care about it
 //second arg = MapDipatch
-export default connect(null, )(CommentBox)
+export default connect(null, actions)(CommentBox)

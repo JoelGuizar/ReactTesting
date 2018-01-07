@@ -1,5 +1,5 @@
 //usually always starts like this
-import {SAVE_COMMENT} from '../actions/type'
+import {SAVE_COMMENT} from '../actions/types';
 
 export default function (state = [], action) {
   switch(action.type){
